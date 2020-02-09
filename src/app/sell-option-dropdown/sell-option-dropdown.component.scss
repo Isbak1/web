@@ -1,0 +1,26 @@
+.option-link:hover{
+ background:whitesmoke;
+ }
+
+
+.option-link{
+height:40px;
+font-size:14px;
+}
+
+
+.mobileshow{
+display:none;
+}
+
+@media screen and (max-width: 800px) {
+.mobileshow {
+display:block; }
+}
+
+
+
+@media screen and (max-width: 800px) {
+.desktopshow {
+display:none; }
+}

@@ -1,0 +1,349 @@
+.login-page{
+  background-color: #E6ECF0;
+  width: 100%;
+}
+
+
+.img-pub{
+border:1px solid #283149;
+border-radius:50%;
+width:50px;
+height:50px;
+}
+
+.publish-bande{
+border-top-left-radius:7px;
+border-top-right-radius:7px;
+border-bottom-right-radius:3px;
+border-bottom-left-radius:3px;
+}
+
+.pub-icons-row{
+height:auto;
+margin-bottom:20px;
+}
+
+.pub-icon{
+margin-top:-25px;
+}
+
+.contain-page{
+margin-top:10px;
+}
+
+
+
+.subtitle{
+  font-family: 'Muli', sans-serif;
+  color: #283149;
+  font-size:10px;
+}
+
+.pub-link{
+  text-decoration:none;
+}
+
+.avatar{
+border-radius:50%;
+border:0.6px solid whitesmoke;
+}
+
+
+.table-list{
+list-style:none;
+}
+
+.option-icon{
+font-size:20px;
+margin-left:60%;
+color: grey;
+}
+
+.option-btn{
+background:none;
+border:0px;
+outline:none;
+}
+
+
+mat-card-subtitle{
+font-size:12px !important;
+}
+
+.cat-list-btn{
+outline:none;
+}
+
+mat-card{
+  border-radius: 0px;
+}
+
+
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.padding-160{
+  padding-top: 30px;
+}
+
+.padding-20{
+padding-right:20px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+
+
+.form-control::placeholder  {
+  font-family: FontAwesome;
+}
+
+.contain-discuss{
+position:absolute;
+margin-top:10px;
+height:200px;
+
+}
+
+.contain-discuss:hover .discuss-img{
+margin-top:2px;
+transition:0.5s;
+}
+
+.contain-discuss:hover .list-discuss-img{
+margin-top:2px;
+transition:0.5s;
+}
+
+.contain-discuss:hover .new-msg-signal{
+margin-top:2px;
+transition:0.5s;
+}
+
+
+app-home-left{
+margin-top:-25px;
+}
+
+
+.new-msg-signal{
+font-size:6px;
+position:absolute;
+right:14px;
+color:#283149;
+margin-top:3px;
+}
+
+.discuss-img{
+margin-top:-15px;
+background-image: url('../../assets/imgs/portsaid.jpg');
+background-size: cover;
+}
+
+.list-discuss-img{
+margin-top:-15px;
+background-image: url('../../assets/imgs/discussion.png');
+background-size: cover;
+border:1px solid #283149;
+}
+
+
+
+.contain-discuss-space{
+margin-top:8vh;
+}
+
+
+app-discussion-shortcut{
+left:72%;
+}
+
+
+.padding-0{
+padding:0px;
+}
+
+.category-access{
+width:100%;
+height:50px;
+padding:0px;
+z-index:3;
+border-top-left-radius:7px !important;
+border-top-right-radius:7px !important;
+border-bottom-left-radius:5px !important;
+border-bottom-right-radius:5px !important;
+outline:none;
+}
+
+
+mat-tree{
+border-top-left-radius:7px !important;
+border-top-right-radius:7px !important;
+border-bottom-left-radius:5px !important;
+border-bottom-right-radius:5px !important;
+}
+
+@media screen and (max-width: 500px) {
+#desktop-left {
+display:none; }
+}
+
+@media screen and (max-width: 500px) {
+#desktop-right {
+display:none; }
+}
+
+@media screen and (max-width: 750px) {
+#desktop-discuss-shortcut {
+display:none; }
+}
+
+
+@media screen and (max-width: 750px) {
+.desktop-show {
+display:none; }
+}
+
+.mobile-show{
+display:none;
+}
+
+@media screen and (max-width: 750px) {
+.mobile-show {
+display:block; }
+}
+
+
+
+.stories-font{
+height-line:10px;
+color:283149;
+font-size:10px;
+padding-left:0px;
+margin-top:0px;
+padding-bottom:0px;
+margin-bottom:0px;
+}
+
+
+.story-btn{
+border:0px;
+background:none;
+outline:none;
+padding:3px;
+}
+
+.my-story-btn{
+border:0px;
+background:none;
+outline:none;
+padding:3px;
+}
+
+
+.create-story{
+background:#2980b9;
+border-radius:50%;
+margin-left:40px;
+height:18px;
+width:18px;
+}
+
+
+.storiesContain{
+    margin-top: 0px;
+    padding: 10px 0px;
+}
+
+.stories-row{
+  width:230px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+.mobile-padding-0 {
+padding-left:0px;
+padding-right:0px;
+}
+}
+
+#mobile-stories{
+display:none;
+}
+
+@media screen and (max-width: 500px) {
+#mobile-stories{
+display:block;
+ margin-top:-35px;}
+
+.storybull{
+background-image: url('../../assets/imgs/portsaid.jpg');
+background-size: cover;
+width:55px;
+height:55px;
+margin-left:1px;
+}
+
+.story-btn{
+height:65px;
+border:1.5px solid #ed4956;
+border-radius:50%;
+margin-right:7px;
+outline:none;
+}
+
+.my-story-btn{
+height:65px;
+border-radius:50%;
+margin-right:7px;
+outline:none;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+.publish-icon{
+height:25px !important;
+width:25px !important;}
+}
+
+
+
+@media screen and (max-width: 500px) {
+.img-pub{
+height:50px !important;
+width:50px !important;}
+}
+
+@media screen and (max-width: 500px) {
+.height-mobile{
+padding-top:0px !important;
+padding-bottom:10px !important;}
+}
+
+
+#mobile-stories {
+  min-width: calc(90% - 50px);
+  max-width: calc(450px - 50px);
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+#mobile-stories::-webkit-scrollbar {
+  height:0px;
+  background: transparent;
+}
+#mobile-stories::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.storiesContain{
+width:1300px !important;
+max-width:auto !important;
+}

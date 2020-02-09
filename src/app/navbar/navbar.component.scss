@@ -1,0 +1,223 @@
+#mobileshow {
+visibility:hidden;
+}
+
+@media screen and (max-width: 500px) {
+#mobileshow {
+visibility:visible }
+}
+
+
+@media screen and (max-width: 500px) {
+#desktop-show {
+display:none; }
+}
+
+.nvbr{
+  background-color: #283149;
+  padding: 9px 0px 9px 0px ;
+  height:64px;
+}
+
+.nvbr li a{
+  color: white;
+  font-size: 14px;
+}
+
+.nav-row{
+width:100% !important;
+}
+
+.searchForm{
+margin-left:23%;
+}
+
+.searchBar{
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    height: 29px;
+    outline: none !important;
+    background: #E6ECF0;
+    padding-left:15px;
+    font-size:14px;
+}
+
+.mobile-searchBar{
+    border: none;
+    border-radius: 3px;
+    width: 140px;
+    height: 25px;
+    outline: none !important;
+    background: #E6ECF0;
+    padding-left:15px;
+    margin-left:20px;
+    font-size:13px;
+}
+
+.nav{
+padding-right:60px;
+}
+
+.nav-link{
+color: whitesmoke;
+font-size:15px;
+outline:none;
+}
+
+
+.option-btn{
+background:none;
+border:0px;
+outline:none;
+background:none;
+padding:0px;
+}
+
+
+.dropdown-menu-chat{
+border:1px solid silver;
+margin-left:-343px;
+width:400px;
+}
+
+.dropdown-menu-notif{
+border:1px solid silver;
+margin-left:-343px;
+width:400px;
+}
+
+.dropdown-menu-more{
+border:1px solid silver;
+margin-left:-143px;
+width:200px;
+}
+
+.option-icon1{
+position:absolute;
+right:22%;
+}
+
+.option-icon2{
+position:absolute;
+right:17%;
+}
+
+.option-icon3{
+position:absolute;
+right:12%;
+}
+
+
+.dropdown-menu::before {
+    border-bottom: 9px solid rgba(0, 0, 0, 0.2);
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    right: 15px;
+    position: absolute;
+    top: -8px;
+}
+
+  .dropdown-menu::after {
+    border-bottom: 8px solid #FFFFFF;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    right: 15px;
+    position: absolute;
+    top: -7px;
+  }
+
+
+.more-row:hover{
+background:whitesmoke;
+}
+
+#signalPoint{
+    font-size: 5px;
+    text-align: center;
+    color: red;
+    margin-top:-15px;
+    margin-bottom:-15px;
+    padding:0px;
+    outline:none;
+}
+
+#signalPoint1{
+    font-size: 5px;
+    text-align: center;
+    color: red;
+    margin-top:-15px;
+    margin-bottom:-15px;
+    padding:0px;
+    outline:none;
+}
+
+
+#signalPoint2{
+    font-size: 5px;
+    text-align: center;
+    color: red;
+    margin-top:-15px;
+    margin-bottom:-15px;
+    padding:0px;
+    outline:none;
+}
+
+.message-avatar {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+    width:50px;
+    height:50px;
+  }
+
+
+.title-intro{
+font-size:12px;
+}
+
+
+.signal-receive{
+color:#2980b9;
+font-size:6px;
+position:absolute;
+margin-top:5px;
+}
+
+
+.message-date{
+line-height:2px;
+font-size:9px;
+color:#283149;
+}
+
+
+.window-title{
+font-size:14px;
+color:#283149;
+}
+
+.important{
+font-size:14px;
+color:#283149;
+}
+
+.notification-intro{
+font-size:13px;
+}
+
+
+
+
+
+.mobile-navbar{
+height:60px
+}
+
+
+.right-5{
+margin-right:-40px;
+}

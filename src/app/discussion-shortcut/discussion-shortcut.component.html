@@ -1,0 +1,56 @@
+<div class="container-fluid chat-box d-flex justify-content-start">
+  <div class="row">
+    <div class="col-12 col-md-12 card-container">
+      <mat-card>
+        <mat-card-header class="chat-head">
+          <div mat-card-avatar class=""><img src="../../assets/imgs/portsaid.jpg" width="40px" height="40px" class="chat-avatar"></div>
+          <mat-card-title>Simba</mat-card-title>
+          <mat-card-subtitle>IT & technology</mat-card-subtitle>
+          <div class="d-flex justify-content-end align-items-center head-btn">
+            <font class="head-icon">
+              <button id="btn-file" class="ico-btn d-flex align-items-center" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <img class="ico-img" src="../../assets/imgs/icons/short-add-black.png">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <div class="container-fluid desktopshow">
+                    <div class="row option-link d-flex align-items-center">
+                      <div class="col-3">
+                        <img src="../../assets/imgs/icons/video.png" width="22px" height="22px">
+                      </div>
+                      <div class="col-8">Video</div>
+                    </div>
+                  </div>
+                </ul>
+              </button>
+            </font>
+            <font class="head-icon">
+              <button id="btn-option" class="ico-btn d-flex align-items-center"><img class="ico-img" src="../../assets/imgs/icons/short-option-black.png"></button>
+            </font>
+            <font class="head-icon">
+              <button id="btn-close" class="ico-btn d-flex align-items-center"><img class="ico-img" src="../../assets/imgs/icons/short-close-black.png"></button>
+            </font>
+          </div>
+        </mat-card-header>
+        <mat-card-content class="chat-affich">
+          <app-sms-list></app-sms-list>
+        </mat-card-content>
+        <mat-card-actions class="chat-action">
+          <form>
+            <textarea class="chat-input">
+            </textarea>
+          </form>
+          <div class="row d-flex justify-content-start chat-foot">
+            <div class="col-md-6 d-flex justify-content-start align-items-center">
+              <button class="ico-btn no-bg">
+                <img src="../../assets/imgs/icons/add-image.png" width="20px" height="20px">
+                <input class="input-apload" type="file" name="file"/>
+              </button>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+              <button class="ico-btn no-bg"><img src="../../assets/imgs/icons/send.png" width="20px" height="20px"></button>
+            </div>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

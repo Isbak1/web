@@ -1,0 +1,45 @@
+<header>
+  <nav class="navbar fixed-top nvbr" id="desktop-show">
+    <div class="container">
+      <div class="row nav-row">
+        <a routerLink="/home" class="navbar-brand  d-flex justify-items-center" style="margin-left: 2%">
+          <img src="../../assets/imgs/white-l.png" width="45" height="40" class="d-inline-block align-top align-start" alt="">
+        </a>
+
+        <form class="searchForm col-5 mt-2">
+          <input class="searchBar" type="search" placeholder="  Search..." aria-label="Search">
+        </form>
+
+        <ul class="nav  justify-content-end">
+          <div class="option-icon1">
+            <button mat-button class="option-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <img src="../../assets/imgs/icons/chat-white.png" width="20px" height="20px">
+              <div id="signalPoint1"><i class="fas fa-circle"></i></div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-chat" aria-labelledby="dropdownMenu1">
+              <app-window-messages></app-window-messages>
+            </ul>
+          </div>
+          <div class="option-icon2">
+            <button mat-button class="option-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <img src="../../assets/imgs/icons/notification-white.png" width="20px" height="20px">
+              <div id="signalPoint2"><i class="fas fa-circle"></i></div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-notif" aria-labelledby="dropdownMenu1">
+              <app-window-notifications></app-window-notifications>
+            </ul>
+          </div>
+          <div class="option-icon3">
+            <button mat-button class="option-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <img src="../../assets/imgs/icons/option-white.png" width="20px" height="20px">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-more" aria-labelledby="dropdownMenu1">
+              <app-window-more></app-window-more>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <app-mobile-navbar id="mobileshow"></app-mobile-navbar>
+</header>

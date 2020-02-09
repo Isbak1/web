@@ -1,0 +1,340 @@
+.body {
+  display: flex;
+  width:100%;
+  align-items: left;
+  justify-content: left;
+  height:80vh;
+  background: #dbedf3;
+  font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1px;
+  color: whitesmoke;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+}
+
+#d-frame {
+  width: 100%;
+  min-width: 360px;
+  max-width: 1200px;
+  height: 80vh;
+  min-height: 300px;
+}
+
+
+@media screen and (max-width: 735px) {
+  .mb-style {
+    height:100vh !important;
+  }
+}
+
+
+#d-frame #d-sidepanel {
+  float: left;
+  min-width: 280px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: #393e46;
+  overflow: hidden;
+  position: relative;
+}
+
+
+#d-frame #d-sidepanel #d-search {
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  font-weight: 300;
+}
+
+#d-frame #d-sidepanel #d-search label {
+  position: absolute;
+  margin: 10px 0 0 20px;
+}
+#d-frame #d-sidepanel #d-search input {
+  font-family: "proxima-nova",  "Source Sans Pro", sans-serif;
+  padding: 10px 0 10px 46px;
+  width: calc(100% - 25px);
+  border: none;
+  background: whitesmoke;
+  color: #393e46;
+}
+#d-frame #d-sidepanel #d-search input:focus {
+  outline: none;
+  background: #e0e0ec;
+}
+#d-frame #d-sidepanel #d-search input::-webkit-input-placeholder {
+  color: #393e46;
+}
+#d-frame #d-sidepanel #d-search input::-moz-placeholder {
+  color: #393e46;
+}
+#d-frame #d-sidepanel #d-search input:-ms-input-placeholder {
+  color: #393e46;
+}
+#d-frame #d-sidepanel #d-search input:-moz-placeholder {
+  color: #393e46;
+}
+#d-frame #d-sidepanel #d-contacts {
+  height: calc(100% - 0px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#d-contacts li{
+list-style-type:none !important;
+}
+
+#d-contacts ul{
+padding-left:0px;
+}
+
+
+
+#d-frame #d-sidepanel #d-contacts::-webkit-scrollbar {
+  width: 8px;
+  background: white;
+}
+#d-frame #d-sidepanel #d-contacts::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact {
+  position: relative;
+  padding: 10px 0 15px 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+#d-frame #d-sidepanel #d-contacts ul li.contact:hover {
+  background: whitesmoke;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact.active {
+  background: whitesmoke;
+  border-right: 5px solid #e0e0ec;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact.active span.contact-status {
+  border: 2px solid whitesmoke !important;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap span {
+  position: absolute;
+  left: 0;
+  margin: -2px 0 0 -2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #95a5a6;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap span.online {
+  background: #2ecc71;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap span.away {
+  background: #f1c40f;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap span.busy {
+  background: #e74c3c;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap .meta {
+  padding: 5px 0 0 0;
+}
+
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap .meta .name {
+  font-weight: 600;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap .meta .preview {
+  margin: 5px 0 0 0;
+  padding: 0 0 1px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -moz-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+#d-frame #d-sidepanel #d-contacts ul li.contact .wrap .meta .preview span {
+  position: initial;
+  border-radius: initial;
+  background: none;
+  border: none;
+  padding: 0 2px 0 0;
+  margin: 0 0 0 1px;
+  opacity: .5;
+}
+
+
+#d-frame .content {
+  float: right;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+#d-frame .content .messages {
+  height: auto;
+  min-height: calc(100% - 93px);
+  max-height: calc(100% - 93px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#d-frame .content .messages::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+#d-frame .content .messages::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#d-frame .content .messages ul li {
+  display: inline-block;
+  clear: both;
+  float: left;
+  margin: 15px 15px 5px 15px;
+  width: calc(100% - 25px);
+  font-size: 0.9em;
+}
+#d-frame .content .messages ul li:nth-last-child(1) {
+  margin-bottom: 20px;
+}
+#d-frame .content .messages ul li.sent img {
+  margin: 6px 8px 0 0;
+}
+#d-frame .content .messages ul li.sent p {
+  background: #e0e0ec;
+  color: #393e46;
+}
+#d-frame .content .messages ul li.replies img {
+  float: right;
+  margin: 6px 0 0 8px;
+}
+#d-frame .content .messages ul li.replies p {
+  background: #393e46;
+  float: right;
+}
+#d-frame .content .messages ul li img {
+  width: 22px;
+  border-radius: 50%;
+  float: left;
+}
+#d-frame .content .messages ul li p {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 205px;
+  line-height: 130%;
+}
+
+
+.messages{
+margin-left:0px;
+width:100%;
+padding-left:0px;
+}
+
+.messages-ul{
+padding-left:2px;
+}
+
+#d-frame .content .message-input {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  background:#e6eaea;
+}
+#d-frame .content .message-input .wrap {
+  position: relative;
+}
+#d-frame .content .message-input .wrap input {
+  font-family: "proxima-nova",  "Source Sans Pro", sans-serif;
+  float: left;
+  border: none;
+  width: calc(100% - 90px);
+  padding: 11px 32px 10px 8px;
+  font-size: 0.8em;
+  color: whitesmoke;
+}
+
+#d-frame .content .message-input .wrap input:focus {
+  outline: none;
+}
+#d-frame .content .message-input .wrap .attachment {
+  position: absolute;
+  right: 60px;
+  z-index: 4;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #e0e0ec;
+  opacity: .5;
+  cursor: pointer;
+}
+#d-frame .content .message-input .wrap .attachment:hover {
+  opacity: 1;
+}
+#d-frame .content .message-input .wrap button {
+  float: right;
+  border: none;
+  width: 50px;
+  padding: 12px 0;
+  cursor: pointer;
+  background: whitesmoke;
+  color: #393e46;
+}
+@media screen and (max-width: 735px) {
+  #d-frame .content .message-input .wrap button {
+    padding: 16px 0;
+  }
+}
+#d-frame .content .message-input .wrap button:hover {
+  background: #e0e0ec;
+}
+#d-frame .content .message-input .wrap button:focus {
+  outline: none;
+}
+
+
+
+.input-style{
+height:48px;
+}
+
+
+
+.d-search-style{
+height:40px;
+margin-right:0px;
+}
+
+#d-profil-img{
+height:45px !important;
+width:45px !important;
+background:url("../../assets/imgs/man.jpg");
+background-size:cover;
+border-radius:50%;
+}
+
+#d-avatar-active{
+height:45px !important;
+width:45px !important;
+background:url("../../assets/imgs/woman.jpg");
+background-size:cover;
+border-radius:50%;
+}
+

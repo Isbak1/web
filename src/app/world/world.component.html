@@ -1,0 +1,185 @@
+<!------------------------------DESKTOP------------------------------------------->
+<div class="contain-all desktopshow">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <div class="row">
+      <mat-card class="col-3 bg-white mt-4 left-nav-style">
+        <mat-card-title class="ml-3"><font size="2">TYPES</font></mat-card-title>
+        <div class="row">
+          <mat-form-field class="li-link">
+            <select class="contriesList nav-link" matNativeControl>
+              <option class="language-option" value="english">CATEGORIES</option>
+              <option class="language-option" value="french">AGRI-FOOD</option>
+              <option class="language-option" value="french">MODE</option>
+              <option class="language-option" value="french">IT TECHNOLOGY</option>
+            </select>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <div class="col-12 ml-4">
+              <div class="[ form-group ]">
+                <input type="checkbox" name="type-checkbox-all" id="type-checkbox-all" autocomplete="off" />
+                <div class="[ btn-group ]">
+                  <label for="type-checkbox-all" class="[ btn btn-blue btn-style ]">
+                    <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                    <span> </span>
+                  </label>
+                  <label for="type-checkbox-all" class="[ btn btn-default active ]">
+                   <font size="2">All</font>
+                  </label>
+                </div>
+              </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-post" id="type-checkbox-post" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="type-checkbox-post" class="[ btn btn-green btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="type-checkbox-post" class="[ btn btn-default active ]">
+                  <font size="2">Posts</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-sale" id="type-checkbox-sale" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="type-checkbox-sale" class="[ btn btn-bling btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="type-checkbox-sale" class="[ btn btn-default active ]">
+                  <font size="2">Sales</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-alert" id="type-checkbox-alert" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="type-checkbox-alert" class="[ btn btn-yellow btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="type-checkbox-alert" class="[ btn btn-default active ]">
+                  <font size="2">Alerts</font>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+      <div class="col-6 mt-4 mb-5">
+        <app-news-fil></app-news-fil>
+      </div>
+      <mat-card class="col-3 bg-white mt-4 right-nav-style">
+        <mat-card-title class="ml-3"><font size="2">AREAS</font></mat-card-title>
+        <div class="row">
+          <mat-form-field class="li-link">
+            <select class="contriesList nav-link" matNativeControl>
+              <option class="language-option" value="english">COUNTRY</option>
+              <option class="language-option" value="french">TUNISIA</option>
+              <option class="language-option" value="french">IVORY COAST</option>
+              <option class="language-option" value="french">MALI</option>
+            </select>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <div class="col-12 ml-4">
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-all" id="area-checkbox-world" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="area-checkbox-world" class="[ btn btn-blue btn-style btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="area-checkbox-world" class="[ btn btn-default active ]">
+                  <font size="2">World</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-post" id="area-checkbox-africa" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="area-checkbox-africa" class="[ btn btn-green btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="area-checkbox-africa" class="[ btn btn-default active ]">
+                  <font size="2">Africa</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-sale" id="area-checkbox-americ" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="area-checkbox-americ" class="[ btn btn-bling btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="area-checkbox-americ" class="[ btn btn-default active ]">
+                  <font size="2">Americ</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-alert" id="area-checkbox-europe" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="area-checkbox-europe" class="[ btn btn-yellow btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="area-checkbox-europe" class="[ btn btn-default active ]">
+                  <font size="2">Europe</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-alert" id="area-checkbox-asia" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="area-checkbox-asia" class="[ btn btn-black btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="area-checkbox-asia" class="[ btn btn-default active ]">
+                  <font size="2">Asia</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-alert" id="area-checkbox-antartic" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="area-checkbox-antartic" class="[ btn btn-gray btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="area-checkbox-antartic" class="[ btn btn-default active ]">
+                  <font size="2">Antartic</font>
+                </label>
+              </div>
+            </div>
+            <div class="[ form-group ]">
+              <input type="checkbox" name="type-checkbox-alert" id="area-checkbox-oceania" autocomplete="off" />
+              <div class="[ btn-group ]">
+                <label for="area-checkbox-oceania" class="[ btn btn-orange btn-style]">
+                  <span class=""><img src="../../assets/imgs/icons/short-check-white.png"/></span>
+                  <span> </span>
+                </label>
+                <label for="area-checkbox-oceania" class="[ btn btn-default active ]">
+                  <font size="2">Oceania</font>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+
+<!------------------------------MOBILE--------------------------------------------->
+<mat-card class="contain-page" id="mobileshow">
+  <app-mobile-navbar></app-mobile-navbar>
+  <app-world-navigation></app-world-navigation>
+  <app-world-body></app-world-body>
+</mat-card>

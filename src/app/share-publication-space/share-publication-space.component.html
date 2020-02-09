@@ -1,0 +1,177 @@
+<app-navbar></app-navbar>
+
+<!-------------------------------------------DESKTOP------------------------------------------------->
+<div class="contain-page" id="desktopshow">
+  <div class="container pb-5 pt-3">
+    <div class="row d-flex justify-content-center p-0">
+      <div class="col-5 col-md-5 p-0">
+        <div class="row">
+          <mat-card class="col-12" id="no-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Simba leroy</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+          <form class="col-12 p-0">
+            <textarea class="text-share pl-4" placeholder="Add your text..."></textarea>
+          </form>
+        </div>
+        <div class="row">
+          <mat-card class="col-12 mb-3">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Simba leroy</mat-card-title>
+              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <div class="option-icon">
+                <button mat-button class="option-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  <img src="../../assets/imgs/icons/option.png" width="20px" height="20px">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <app-post-option-dropdown></app-post-option-dropdown>
+                </ul>
+              </div>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/imgs/simu4.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                bred for hunting.
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button>
+                <img src="../../assets/imgs/icons/like.png" width="20px" height="20px">
+                <font>&nbsp;98</font>
+              </button>
+              <button mat-button>
+                <img src="../../assets/imgs/icons/comment.png" width="20px" height="20px">
+                <font>&nbsp;5</font>
+              </button>
+              <button mat-button routerLink="/share">
+                <img src="../../assets/imgs/icons/share.png" width="20px" height="20px">
+                <font>&nbsp;3</font>
+              </button>
+            </mat-card-actions>
+            <mat-card-content>
+              <div class="container">
+                <div class="row padding-0">
+                  <div class="col-md-1 col-sm-1 col-xs-1 padding-0">
+                    <div mat-card-avatar class="comment-avatar-image"></div>
+                  </div>
+                  <div class="col-md-8 col-sm-8 col-xs-10 padding-0 comment-div">
+                    <font class="comment-text">Je suis de tout coeur avec vous monsieur.</font>
+                    <button class="comment-like"><img src="../../assets/imgs/icons/like.png" class="comment-like-img" width="15px" height="15px"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row mt-4">
+                  <div class="col-md-1 col-sm-1 col-xs-1 padding-0">
+                    <div mat-card-avatar class="comment-avatar-image"></div>
+                  </div>
+                  <div class="col-12 col-md-11 col-sm-11 col-xs-11 padding-0">
+                    <input class="add-comment" type="text" placeholder="Add comment..." maxlength="500" name="new-comment">
+                  </div>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="col-2 pl-5 pt-5">
+        <button class="publish-btn mb-5">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!--------------------------------------------MOBILE------------------------------------------------->
+<div class="container mb-5" id="mobileshow">
+  <div class="row p-0">
+    <div class="col-12 p-0">
+      <mat-card id="no-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Simba leroy</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row">
+    <form>
+      <textarea class="text-share pl-4" placeholder="Add your text..."></textarea>
+    </form>
+  </div>
+  <div class="row">
+    <mat-card class="col-12 mb-3">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Simba leroy</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <div class="option-icon">
+          <button mat-button class="option-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="../../assets/imgs/icons/option.png" width="20px" height="20px">
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <app-post-option-dropdown></app-post-option-dropdown>
+          </ul>
+        </div>
+      </mat-card-header>
+      <img mat-card-image src="../../assets/imgs/simu4.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>
+          <img src="../../assets/imgs/icons/like.png" width="20px" height="20px">
+          <font>&nbsp;98</font>
+        </button>
+        <button mat-button>
+          <img src="../../assets/imgs/icons/comment.png" width="20px" height="20px">
+          <font>&nbsp;5</font>
+        </button>
+        <button mat-button routerLink="/share">
+          <img src="../../assets/imgs/icons/share.png" width="20px" height="20px">
+          <font>&nbsp;3</font>
+        </button>
+      </mat-card-actions>
+      <mat-card-content>
+        <div class="row">
+          <div class="col-2 col-xs-1"><img src="../../assets/imgs/man.jpg" class="comment-avatar"></div>
+          <div class="col-auto p-0">
+            <div class="comment">I believe in this project with heart.</div>
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <button class="comment-like"><img src="../../assets/imgs/icons/like.png" class="comment-like-img" width="18px" height="18px"></button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-2 col-xs-1"><img src="../../assets/imgs/man.jpg" class="comment-avatar"></div>
+          <div class="col-auto p-0">
+            <input class="add-comment" type="text" placeholder="Add comment..." name="new-comment">
+          </div>
+          <div class="col-auto d-flex align-items-center">
+            <button class="comment-like"><img src="../../assets/imgs/icons/send.png" class="comment-like-img" width="18px" height="18px"></button>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="row mb-5">
+    <div class="col-12 d-flex justify-content-end">
+      <button class="publish-btn mb-5">Publish</button>
+    </div>
+  </div>
+</div>

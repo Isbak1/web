@@ -1,0 +1,80 @@
+<header>
+    <nav class="navbar nvbr">
+        <a class="navbar-brand d-flex justify-items-center ml-5" href="#">
+            <img src="../../assets/imgs/white-l.png" width="70" height="70" class="d-inline-block align-top align-start" alt="">
+            <div class="is">Support</div>
+        </a>
+    </nav>
+</header>
+<div class="login-page">
+ <div class="bak">Submit a request</div>
+ <div></div>
+<form class="container col-md-6" align="left">
+    <div class="card-body">
+    <div class="form-group">
+        <label for="mail">Email address</label>
+        <input type="email" class="form-control" id="mail" placeholder="Your email" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+        <div class="form-group1">
+            <label for="exampleFormControlSelect1">categories</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option value=" ">Select a category</option>
+                <option>Mode</option>
+                <option>Tourism</option>
+                <option>Cinema</option>
+                <option>Sport</option>
+                <option> Builders</option>
+                <option>Business Service</option>
+                <option>IT&Technologie</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="form-group2">
+                <label for="text">Subject</label>
+                <input type="text" id="text" class="form-control" placeholder="Subject"/>
+        </div>
+        <div>
+            Looking for help with a common request?
+            <ul >
+                <li>I have a question about a repository on Amonak</li>
+                <li> I'm seeing a Amonak Pages error</li>
+                <li>My credit card was declined</li>
+            </ul>
+        </div>
+
+       <!-- <div class="form-group">
+            <label for="text1">How can we help?</label>
+            <textarea class="form-control" cols="70" id="text1" placeholder="Write us a message" rows="10"></textarea>
+        </div>-->
+        <form class="was-validated">
+            <div class="mb-3">
+                <label for="validationTextarea">How can we help?</label>
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Write us a message" required></textarea>
+                <div class="invalid-feedback">
+
+                </div>
+            </div>
+        </form>
+      <div class="form-group">
+          <div>  <label for="file1">Attach files, screenshots, or logs</label> </div>
+            <button type="button" class="btn btn-light">
+            <input type="file" class="form-control-file" id="file1"/>
+            </button>
+        </div>
+       <!-- <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+            <div class="invalid-feedback">Attach files, screenshots, or logs</div>
+        </div>-->
+        <div>
+            <button type="button" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true" >Send request</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+<footer class="page-footer font-small pt-4 foot-div">
+    <app-login-footer></app-login-footer>
+</footer>
+

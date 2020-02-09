@@ -1,0 +1,138 @@
+.contain-all{
+width:100%;
+background:#E6ECF0;
+min-height:100vh;
+height:auto;
+max-height:auto;
+}
+
+.left-nav-style{
+height:55vh;
+}
+
+.btn-style{
+border-radius:5px;
+height:35px;
+}
+
+.right-nav-style{
+height:82vh;
+}
+
+.btn-gray{
+background:#a4b0be;
+height:35px;
+}
+
+.btn-blue{
+background:#2980b9;
+height:35px;
+}
+
+.btn-green{
+ background:#27ae60;
+ height:35px;
+ }
+
+.btn-yellow{
+ background:#f1c40f;
+ height:35px;
+ }
+
+ .btn-orange{
+  background:#e84118;
+  height:35px;
+  }
+
+.btn-black{
+background:#353b48;
+height:35px;
+}
+
+.btn-bling{
+background:#16a085;
+height:35px;
+}
+
+option{
+font-size:12px !important;
+}
+
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;
+}
+
+
+.contriesList{
+color:black !important;
+font-size:15px;
+font-family: 'Roboto', sans-serif;
+}
+
+
+.contriesList-option{
+border:0px;
+outline:none;
+color:black;
+font-family: 'Roboto', sans-serif;
+}
+
+.li-link{
+margin-left:40px;
+}
+
+
+mat-card{
+border:0px !important;
+box-shadow:none !important;
+width:100%;
+padding:0px !important;
+}
+
+
+.contain-page{
+background:#E6ECF0;
+}
+
+
+@media screen and (min-width: 800px) {
+  .desktopshow{
+  display:block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .desktopshow{
+  display:none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #mobileshow{
+  display:block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #mobileshow{
+  display:none;
+  }
+}

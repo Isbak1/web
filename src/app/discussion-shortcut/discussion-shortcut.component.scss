@@ -1,0 +1,201 @@
+.chat-box{
+height:100%;
+width:100%;
+padding:0px;
+}
+
+mat-card{
+background:white;
+width:92%;
+height:405px;
+margin-left:4%;
+margin-bottom:0px;
+}
+
+.chat-head{
+width:300px;
+height:50px;
+padding:0px;
+margin:0px;
+margin-left:-4%;
+margin-top:-3%;
+}
+
+.card-container{
+padding:0px;
+}
+
+
+.chat-avatar{
+border-radius:50%;
+}
+
+mat-card-title{
+font-size:15px !important;
+}
+
+mat-card-subtitle{
+font-size:11px !important;
+}
+
+.head-btn{
+position:absolute;
+left:74%;
+display:inline-block;
+width:25%;
+}
+
+.material-icons{
+font-size:21px;
+color:#283149;
+}
+
+.head-icon{
+margin-left:12px;
+}
+
+.fa-dot-circle{
+font-size:16px;
+color:#283149;
+margin-top:-2px !important;
+}
+
+.chat-affich{
+height:270px;
+height-max:226px;
+height-min:200px;
+width:307px;
+background:white;
+margin-left:-5%;
+padding:0px;
+margin-bottom:0px;
+border-top:0.5px solid silver;
+}
+
+.chat-action{
+height:70px;
+width:307px;
+margin-left:-5%;
+padding:0px;
+margin-bottom:0px;
+background:white;
+}
+
+
+.chat-input{
+width:307px;
+height:45px;
+outline:none;
+border-radius:7px;
+border:none;
+margin-bottom:0px;
+resize:none;
+padding-left:4px;
+font-size:14px;
+overflow-y:hidden;
+border:0.5px solid silver;
+}
+
+.chat-input:focus{
+height:55px;
+height-max:60px;
+resize:none;
+padding-left:4px;
+font-size:14px;
+border-bottom:0.8px solid gray;
+border-radius:0px;
+border-top:0.5px solid silver;
+border-left:0px;
+border-right:0px;
+}
+
+.chat-foot{
+width:307px;
+height:20px;
+margin-left:0%;
+margin-top:-7px;
+}
+
+
+.ico-btn{
+border:0px;
+padding:0px;
+outline:none;
+height:17px;
+width:17px;
+}
+
+.no-bg{
+background:none !important;
+}
+
+.option-link:hover{
+ background:whitesmoke;
+ }
+
+.option-link{
+height:40px;
+font-size:14px;
+}
+
+
+.dropdown-menu{
+border:1px solid silver;
+margin-left:-115px;
+width:50px;
+}
+
+.dropdown-menu::before {
+    border-bottom: 9px solid rgba(0, 0, 0, 0.2);
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    right: 26px;
+    position: absolute;
+    top: -8px;
+}
+
+  .dropdown-menu::after {
+    border-bottom: 8px solid #FFFFFF;
+    border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    content: "";
+    display: inline-block;
+    right: 26px;
+    position: absolute;
+    top: -7px;
+  }
+
+.ico-img{
+visibility:hidden;
+}
+
+#btn-file{
+background:#2980b9;
+border-radius:50%;
+}
+
+#btn-option{
+background:#16a085;
+border-radius:50%;
+}
+
+#btn-close{
+background:#ee5253;
+border-radius:50%;
+}
+
+.ico-btn:hover .ico-img{
+visibility:visible;
+margin:0px;
+}
+
+.input-apload {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+

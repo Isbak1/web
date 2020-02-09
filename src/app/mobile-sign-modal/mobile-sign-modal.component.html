@@ -1,0 +1,89 @@
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <mat-card  class="login-card">
+      <div class="row ">
+        <div class="col-6">
+          <button class="login-page-btn p-3" (click)="select('signin')" [ngClass]=" selected == 'signin' ? 'selected' : ''">Sign In</button>
+        </div>
+        <div class="col-6">
+          <button class="login-page-btn p-3" (click)="select('signup')" [ngClass]=" selected == 'signup' ? 'selected' : ''">Sign Up</button>
+        </div>
+      </div>
+
+      <mat-card-content >
+        <div *ngIf="selected == 'signin'" class="pt-5 pr-5 pl-5 pb-2" >
+          <div>
+            <mat-form-field class="login-input" appearance="outline">
+              <mat-label>Username</mat-label>
+              <input  matInput placeholder="Username" [formControl]="username" >
+              <mat-error *ngIf="username.invalid">{{getErrorMessage().usernameError}}</mat-error>
+              <mat-hint></mat-hint>
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field class="login-input" appearance="outline">
+              <mat-label>Password</mat-label>
+              <input type="password" class="login-input" matInput placeholder="Password" [formControl]="password">
+              <mat-error *ngIf="password.invalid">{{getErrorMessage().passError}}</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div>
+            <button class="login-btn p-2" (click)="onLogin()">Sign In</button>
+          </div>
+
+          <div class="text-center p-3">
+            <a routerLink="/reset" class="forgot-pass" href="">Forgot Password ?</a>
+          </div>
+        </div>
+
+
+
+        <div *ngIf="selected == 'signup'" class="pt-5 pr-5 pl-5 pb-4">
+          <div >
+            <mat-form-field class="login-input" appearance="outline">
+              <mat-label>Username</mat-label>
+              <input type="text" matInput placeholder="Username" [formControl]="username">
+              <mat-hint></mat-hint>
+            </mat-form-field>
+          </div>
+
+          <div >
+            <mat-form-field class="login-input" appearance="outline">
+              <mat-label>Mail Address</mat-label>
+              <input matInput placeholder="Mail Address" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorMessage().emailError}}</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div >
+            <mat-form-field class="login-input" appearance="outline">
+              <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" [formControl]="password" required>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+              <mat-error *ngIf="password.invalid">{{getErrorMessage().passError}}</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div >
+            <mat-form-field class="login-input" appearance="outline">
+              <mat-label>Confirm Password</mat-label>
+              <input matInput placeholder="Confirm your password" [type]="hideC ? 'password' : 'text'" [formControl]="pass_confirm" required>
+              <button mat-icon-button matSuffix (click)="hideC = !hideC" [attr.aria-label]="'Hide pass_confirm'" [attr.aria-pressed]="hideC">
+                <mat-icon>{{hideC ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+              <mat-error *ngIf="pass_confirm.invalid">{{getErrorMessage().passConfirmError}}</mat-error>
+            </mat-form-field>
+          </div>
+
+          <div>
+            <button class="login-btn p-2" (click)="onRegister()">Sign Up</button>
+          </div>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

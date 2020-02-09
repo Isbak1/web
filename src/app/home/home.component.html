@@ -1,0 +1,138 @@
+<div class="login-page">
+  <app-navbar></app-navbar>
+
+
+  <!-------------------------------------------POST MODAL----------------------------------------->
+  <div class="modal fade" id="modalPost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+       aria-hidden="true">
+    <app-post-modal></app-post-modal>
+  </div>
+  <div class="modal fade" id="modalSell" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+       aria-hidden="true">
+    <app-sell-modal></app-sell-modal>
+  </div>
+  <div class="modal fade" id="modalAlert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+       aria-hidden="true">
+    <app-alert-modal></app-alert-modal>
+  </div>
+
+
+
+  <div class="container contain-page mobile-padding-0">
+    <div class="row padding-160">
+      <div class="col-12 col-md-3 col-sm-3 padding-20" id="desktop-left">
+        <app-home-left class="position-fixed"></app-home-left>
+      </div>
+
+      <div class="col-12 col-md-6 mobile-padding-0">
+        <div class="row d-flex justify-content-center pub-icons-row">
+          <mat-card class="col-12 pt-5 pb-2 mb-3 bg-white publish-bande desktop-show">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col-3 pl-4 pr-4 pub-icon height-mobile text-center d-flex justify-content-center">
+                <a href="#" class="pub-link desktop-show" data-toggle="modal" data-target="#modalPost">
+                  <div class="img-pub d-flex justify-content-center align-items-center"><img src="../../assets/imgs/pen-post.png" width="20px" height="22px" class="publish-icon"></div>
+                  <div class="subtitle">Post</div>
+                </a>
+              </div>
+              <div class="col-3 pl-4 pr-4 pub-icon height-mobile text-center d-flex justify-content-center">
+                <a href="#" class="pub-link desktop-show" data-toggle="modal" data-target="#modalSell">
+                  <div class="img-pub d-flex justify-content-center align-items-center"><img src="../../assets/imgs/basket-sell.png" width="20px" height="20px" class="publish-icon"></div>
+                  <div class="subtitle">Sell</div>
+                </a>
+              </div>
+              <div class="col-3 pl-4 pr-4 pub-icon height-mobile text-center d-flex justify-content-center">
+                <a class="pub-link desktop-show" data-toggle="modal" data-target="#modalAlert">
+                  <div class="img-pub d-flex justify-content-center align-items-center"><img src="../../assets/imgs/megaphone.png" width="20px" height="20px" class="publish-icon"></div>
+                  <div class="subtitle">Alert</div>
+                </a>
+              </div>
+            </div>
+          </mat-card>
+
+          <div id="mobile-stories">
+            <div class="row storiesContain mb-2">
+              <button class="my-story-btn">
+                <figure>
+                  <div mat-card-avatar class="storybull">
+                  <font class="create-story d-flex align-items-center"><img src="../../assets/imgs/icons/short-add-white.png"/></font>
+                  </div>
+                </figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+              <button class="story-btn">
+                <figure><div mat-card-avatar class="storybull"></div></figure>
+              </button>
+            </div>
+          </div>
+
+          <app-news-fil class="mb-5"></app-news-fil>
+        </div>
+      </div>
+      <div class="col-12 col-md-3" id="desktop-right">
+        <div class="container-fluid padding-0">
+          <div class="row">
+            <div class="col-12 col-md-10 col-sm-10 d-flex justify-content-start padding-0">
+              <mat-card routerLink="/world" class="category-access">
+                <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+                  <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+                    <button mat-icon-button disabled></button>
+                    {{node.item}}
+                  </mat-tree-node>
+                  <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
+                    <button mat-icon-button
+                            [attr.aria-label]="'toggle ' + node.filename" matTreeNodeToggle class="cat-list-btn">
+                      <mat-icon class="mat-icon-rtl-mirror">
+                        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+                      </mat-icon>
+                    </button>
+                    {{node.item}}
+                    <mat-progress-bar *ngIf="node.isLoading"
+                                      mode="indeterminate"
+                                      class="example-tree-progress-bar"></mat-progress-bar>
+                  </mat-tree-node>
+                </mat-tree>
+              </mat-card>
+            </div>
+            <div class="col-12 col-md-1 col-sm-1 d-flex justify-content-right padding-0">
+              <div class="row contain-discuss">
+<!--                <div class="col-md col-sm">-->
+<!--                  <div routerLink="/discussionShortcut" class="discuss-avatar"><div class="new-msg-signal"><i class="fas fa-circle"></i></div><div mat-card-avatar class="discuss-img"></div></div>-->
+<!--                  <div routerLink="/discussionShortcut" class="discuss-avatar"><div class="new-msg-signal"><i class="fas fa-circle"></i></div><div mat-card-avatar class="discuss-img"></div></div>-->
+<!--                  <div routerLink="/discussionShortcut" class="discuss-avatar"><div class="new-msg-signal"><i class="fas fa-circle"></i></div><div mat-card-avatar class="discuss-img"></div></div>-->
+<!--                  <div routerLink="/discussionShortcut" class="discuss-avatar"><div class="new-msg-signal"><i class="fas fa-circle"></i></div><div mat-card-avatar class="discuss-img"></div></div>-->
+<!--                  <div routerLink="/discussionShortcut" class="discuss-avatar"><div class="new-msg-signal"><i class="fas fa-circle"></i></div><div mat-card-avatar class="list-discuss-img"></div></div>-->
+<!--                </div>-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row contain-discuss-space" id="discussionShortcut" style="z-index:1 !important;">
+          <app-discussion-shortcut id="desktop-discuss-shortcut" class="fixed-bottom" style="z-index:1 !important;"></app-discussion-shortcut>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
